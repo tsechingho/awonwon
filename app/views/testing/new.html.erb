@@ -1,3 +1,8 @@
 <%= form_tag(track_path(format: :js), remote: true) do |f| %>
   <%= submit_tag :submit %>
 <% end %>
+
+<script type="text/javascript">
+  $('form').submit();
+</script>
+
