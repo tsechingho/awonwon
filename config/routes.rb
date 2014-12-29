@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'test/new', to: 'testing#new'
+  post 'track', to: 'testing#track', as: 'track'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
